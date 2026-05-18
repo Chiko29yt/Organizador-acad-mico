@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    font-size:40px;
+}
+
+.subtitulo{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    background:#334155;
+    color:white;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#38bdf8;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
+
+.lista{
+    margin-top:15px;
+}
+
+.item{
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.item h3{
+    color:#f8fafc;
+}
+
+.item p{
+    color:#cbd5e1;
+    margin-top:5px;
+}
+
+.fecha{
+    color:#facc15;
+    font-weight:bold;
+}
+
+.alerta{
+    margin-top:20px;
+    background:#ef4444;
+    padding:15px;
+    border-radius:10px;
+    display:none;
+}
+
+.resumen{
+    margin-top:20px;
+    background:#22c55e;
+    padding:15px;
+    border-radius:10px;
+}
+
+@media(max-width:800px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8"> <!-- reconocimiento de caracteres especiales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adaptacion a dispositivos -->
+
+<title>Organizador Académico</title>
+
+<link rel="stylesheet" href="estilos.css"> <!-- conexion con los estilos en css -->
+<script src="funciones.js"></script> <!-- conexion con los scrips en js -->
+
+ 
+</head>
+
+<body>
+
+    <!-- Titulo y bienvenida-->
+<div class="container">
+    <h1> Organizador Académico</h1>
+    <p class="subtitulo">
+        Bienvenido en este espacio, aquí puedes organizar tus actividades académicas libremente
+    </p>
+    <div class="grid">
+
+        <!-- Para agregar -->
+        <div class="card">
+
+            <h2> <center> Agregar Actividad </center></h2>
+
+            <input type="text" id="materia" placeholder="Nombre de la materia">
+
+            <input type="text" id="actividad" placeholder="Nombre de la actividad">
+
+            <select id="tipo">
+                <option value="Tarea">Tarea</option>
+                <option value="Parcial">Parcial</option>
+                <option value="Proyecto">Proyecto</option>
+            </select>
+
+            <input type="date" id="fecha">
+
+            <button onclick="agregarActividad()">
+                Guardar Actividad
+            </button>
+
+            <div class="alerta" id="alerta">
+                ⚠ Debes llenar todos los campos
+            </div>
+
+        </div>
+
+        <!-- lista -->
+        <div class="card">
+
+            <h2> <center> Resumen Académico </center> </h2>
+
+            <div class="resumen" id="contador">
+                Actividades pendientes: 0
+            </div>
+
+            <div class="lista" id="listaActividades"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
